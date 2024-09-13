@@ -1,0 +1,128 @@
+#cuenta-carrito {
+    background-color: red !important;
+    border-radius: 100%;
+    display: inline-block;
+    height: 25px;
+    line-height: 25px;
+    aspect-ratio: 1;
+    text-align: center;
+    color: white;
+
+    /* margin-bottom: 15px; */
+}
+
+#productos-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: left;
+}
+
+.tarjeta-producto {
+    background-color: var(--color-acento-claro);
+    text-align: center;
+    padding: 10px;
+    max-width: 400px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+    transition: 200ms;
+}
+
+.tarjeta-producto:hover {
+    box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.2);
+    translate: 0px -5px;
+}
+
+.tarjeta-compras {
+    background-color: var(--color-acento-claro);
+    text-align: center;
+    padding: 10px;
+    max-width: 700px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+    text-align: center;
+    margin-top: 100px;
+    align-content: center;
+}
+
+.tarjeta-producto:hover {
+    box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.2);
+    translate: 0px -5px;
+}
+
+/*.mover img {
+height: 25px;
+color: white;
+}*/
+.productos-totales {
+    box-shadow: 1px 1px 5px 5px rgba(0, 0, 0, 0.2);
+    margin-left: -100px;
+    width: 500px;
+    height: 300px;
+    margin-top: 100px;
+
+
+}
+
+:root {
+    --color-naranja: #f57c00;
+}
+
+.btn {
+    background-color: var(--color-naranja) !important;
+    border-color: var(--color-naranja) !important;
+    color: white !important;
+}
+
+.btn:hover {
+    background-color: #f57c00 !important;
+    border-color: #f57c00 !important;
+    color: white !important;
+}
+
+.text {
+    margin-top: 55px;
+    color: #f61b0b;
+    padding-left: 105px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+}
+
+.text2 {
+    margin-top: 55px;
+    color: #f61b0b;
+    padding-left: 20px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+}
+
+.align {
+    margin-top: 150px !important;
+    position: absolute;
+    transform: translate(100%, -50%);
+}
+
+.bi-trash {
+    color: red !important;
+
+}
+
+.bi-trash:hover {
+
+    cursor: pointer;
+}
+
+.bi-plus-square {
+    padding-left: 15px;
+}
+
+.bi-plus-square:hover {
+    cursor: pointer;
+}
+
+.bi-dash-square {
+    padding-right: 15px;
+}
+
+.bi-dash-square:hover {
+    padding-right: 15px;
+    cursor: pointer;
+}
