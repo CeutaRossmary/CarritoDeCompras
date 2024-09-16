@@ -1,3 +1,13 @@
+.fondo {
+  background: url("../img/baner.jpg");
+ background-size:cover;
+  background-position:center;
+  background-repeat:no-repeat;	
+  height: 250px;
+
+}
+
+
 #cuenta-carrito {
     background-color: red !important;
     border-radius: 100%;
@@ -16,6 +26,7 @@
     flex-wrap: wrap;
     gap: 10px;
     justify-content: left;
+    background-color:#b1b1b1;
 }
 
 .tarjeta-producto {
@@ -63,21 +74,23 @@ color: white;
 
 
 }
-
+.shadow{
+    background-color: #efe4e1 !important;
+}
 :root {
     --color-naranja: #f57c00;
 }
 
 .btn {
-    background-color: var(--color-naranja) !important;
-    border-color: var(--color-naranja) !important;
+    background-color: #67ac5b !important;
+    border-color: #67ac5b !important;
     color: white !important;
 }
 
 .btn:hover {
     background-color: #f57c00 !important;
     border-color: #f57c00 !important;
-    color: white !important;
+    color: black !important;
 }
 
 .text {
