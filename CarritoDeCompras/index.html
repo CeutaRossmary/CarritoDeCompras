@@ -19,57 +19,39 @@
 </head>
 
 <body>
-    <nav id="ocultar" class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <div class="inline my-2 pr-15">
-            <img id="logo" src="img/main-logo.png" class="d-block img-fluid" alt="..">
-        </div>
-        <div class="collapse navbar-collapse" id="barra">
-            <ul class="navbar-nav mr-auto mt-5 mt-lg-0">
+    <nav class="navbar navbar-expand-lg  bg-white ">
+        <img src="img/main-logo.jpeg" class="d-block img-fluid" alt="..">
+        <div class="">
+            <ul class="navbar-nav fs-4 fw-bolder mr-auto mt-5 mt-lg-0">
                 <li class="nav-item active">
                     <a class="nav-link" href="index.html">Home</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link active" href="#" onclick="crearTarjetasProductosInicio()">Productos</a>
-
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link active" href="about.html" target>About</a>
+                    <a class="nav-link active" href="#" target>About</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link active" href="formulariocontacto.html" target>Contacto</a>
+                    <a class="nav-link active" href="#" target>Contacto</a>
                 </li>
             </ul>
         </div>
         <div>
-            <a href="#">
-                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-cart"
-                    viewBox="0 0 16 16">
-                    <path
-                        d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5M3.102 4l1.313 7h8.17l1.313-7zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4m7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4m-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2m7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2" />
-                </svg>
-                <span id="cuenta-carrito" onclick="crearTarjetasProductosCarrito()">0</span>
-            </a>
-        </div>
+            <a href="#" class="mover"><img src="img/icons8-añadir-al-carrito-100.png" alt=""><span id="cuenta-carrito"
+                    onclick="crearTarjetasProductosCarrito()">0</span></a>
     </nav>
-   <div class="fondo igual-relacion">
-  <h1>Igual Relacion de Aspecto</h1>
-  <p>Texto interno</p>
-</div>
-
-    <main>
-
+    <div class="fondo igual-relacion">
+       
+    </div>
+    <div>>
         <section id="productos-container">
         </section>
         <section id="productos-totales">
         </section>
-    </main>
-    <footer class="bg-black text-center text-lg-center text-white p-15">
-        <!-- Copyright -->
-        <div class="text-center p-3">
-            © 2024 Copyright: <p>I love Pets</p>
-        </div>
-        <!-- Copyright -->
-    </footer>
+    </div>
+    
+    
 </body>
 <script src="js/index.js"></script>
 

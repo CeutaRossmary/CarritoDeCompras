@@ -2,31 +2,31 @@ const productos = [
   {
     id: 1,
     nombre: "Leche",
-    precio: 11500,
+    precio: 1000,
     img: "img/leche.jpg",
   },
   {
     id: 2,
     nombre: "Azúcar",
-    precio: 222222,
+    precio: 1300,
     img: "img/azucar.png",
   },
   {
     id: 3,
     nombre: "Pan de Molde",
-    precio: 333333,
+    precio: 2000,
     img: "img/pan.jpg",
   },
   {
     id: 4,
     nombre: "Queso",
-    precio: 444444,
+    precio: 1200,
     img: "img/queso.jpg",
   },
   {
     id: 5,
     nombre: "Mermelada",
-    precio: 555555,
+    precio: 890,
     img: "img/mermelada.jpg",
   },
 ];
