@@ -14,7 +14,6 @@
         integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
     <script src="js/productos.js"></script>
     <link rel="stylesheet" href="css/style.css">
-
     <title>Productos</title>
 </head>
 
@@ -42,16 +41,19 @@
                     onclick="crearTarjetasProductosCarrito()">0</span></a>
     </nav>
     <div class="fondo igual-relacion">
-       
     </div>
     <div>>
         <section id="productos-container">
         </section>
         <section id="productos-totales">
+            <div id="alerta" class="alert alert-warning position-absolute top-50 start-50 translate-middle"
+                role="alert">
+                <strong>!Gracias por su compra!</strong> <br>
+                Pronto le llegara un correo con el detalle de su cuenta.
+                <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+            </div>
         </section>
     </div>
-    
-    
 </body>
 <script src="js/index.js"></script>
 

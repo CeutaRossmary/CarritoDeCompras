@@ -1,3 +1,6 @@
+document.getElementById("alerta").style.display = "none";
+
+//Declaración de variables globales.
 const cuentaCarritoElement = document.getElementById("cuenta-carrito");
 const contenedorTarjetas = document.getElementById("productos-container");
 const contenedorTotales = document.getElementById("productos-totales");
@@ -28,7 +31,6 @@ function agregarAlCarrito(id, nombre, precio, img, cantidad) {
     ListaCarrito.push({ id, nombre, precio, img, cantidad });
   }
 
-  //crearTarjetasProductosCarrito();
   actualizarConteoCarrito();
 }
 
@@ -99,7 +101,7 @@ function crearTarjetasProductosCarrito() {
     const importe = producto.precio * producto.cantidad;
     totalCarrito += importe; // Acumulamos el total
     cantidadProducto += producto.cantidad;
- 
+
     contenido += "<tr>";
     contenido += `<td><img src="${producto.img}" style="width: 150px; height: 150px;"></td>`;
     contenido += `<td>${producto.nombre}</td>`;
@@ -124,14 +126,16 @@ function crearTarjetasProductosCarrito() {
     totalCarrito
   )}</td>`;
   contenido += "</tr>";
-  contenido += `<td class="position-relative"><button type="button" class="btn btn-secondary position-absolute top-50 start-50 translate-middle">Continuar compra</button></td>`;
+  contenido += `<td class="position-relative"><button type="button" id="btnProcesar" class="btn btn-secondary position-absolute top-50 start-50 translate-middle">Continuar compra</button></td>`;
   contenido += "</body>";
   contenido += "</table>";
 
   contenido += "</div>";
 
   contenedorTarjetas.innerHTML = contenido;
-
+  document.getElementById("btnProcesar").addEventListener("click", () => {
+    procesarCompra();
+  });
   ListaCarrito.forEach((producto, i) => {
     document.getElementById(`btnEliminar${i}`).addEventListener("click", () => {
       eliminarDelCarrito(i);
@@ -144,4 +148,13 @@ function eliminarDelCarrito(index) {
   ListaCarrito.splice(index, 1);
   crearTarjetasProductosCarrito();
   actualizarConteoCarrito();
+}
+
+// Función para procesar la compra y redirigir al inicio
+function procesarCompra() {
+  document.getElementById("alerta").style.display = "block";
+
+  setTimeout(() => {
+    location.reload();
+  }, 2000);
 }
